@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Student Details</title>
+    </head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width:fit-content ;
+        }
+
+        th,
+        td {
+            padding: 20px;
+            background-color:darksalmon;
+        }
+
+        .heading {
+            font-size: 55px;
+            letter-spacing: -2px;
+            border-bottom: 2px solid black;
+            text-transform: uppercase;
+            background-color: azure;
+        }
+        body{
+            display:table;
+            margin: 0 auto;
+        }
+    </style>
+
+    <body>
+        <h1 class="heading">
+            Student object and printing the details in JavaScript.
+        </h1>
+        <p>Console check for output</p>
+        <h3>Student Details</h3>
+        <table>
+            <tr>
+                <th>Name of the Student</th>
+                <th>Class of the Student</th>
+                <th>Roll Number of the Student</th>
+            </tr>
+            <tr>
+                <td id="printName"></td>
+                <td id="printClass"></td>
+                <td id="printRoll"></td>
+            </tr>
+        </table>
+        <br><br>
+        <p>Error Testing</p>
+        <input id="checkError" type="text" value="" placeholder="Enter string or 0 for error" /> <button type="submit"
+            onclick="return checkError()">Check</button>
+    </body>
+    <script src="student.js"></script>
+
+</html>
